@@ -153,5 +153,37 @@ setInterval(greet, 2000);*/
 //Assignment
 
 // 1. Create a counter in javascript (counts down from 30 to 0)
-// 2. Calculate the time it takes between a setTimeout call and the inner function actuually running
+// 2. Calculate the time it takes between a setTimeout call and the inner function actually running
 // 3. create a terminal clock(HH:MM:SS)
+
+
+//1
+
+/*
+function countdown(number){
+    if(number<0){
+        return number;
+         }
+         console.log(number);
+         
+
+    setTimeout(()=>countdown(number-1),1000);
+
+}
+countdown(30);
+*/
+
+const startTime = Date.now();
+
+setTimeout(()=>{
+    const endTime = Date.now();
+
+    const actual = endTime-startTime;
+
+    console.log("expected time 2000");
+    console.log(`actul time ${actual}`);
+    
+},2000)
+
+
+
