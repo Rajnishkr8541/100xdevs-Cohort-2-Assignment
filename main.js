@@ -158,32 +158,83 @@ setInterval(greet, 2000);*/
 
 
 //1
-
 /*
-function countdown(number){
+function countDown(number){
     if(number<0){
         return number;
-         }
-         console.log(number);
-         
+    }
+    console.log(number);
 
-    setTimeout(()=>countdown(number-1),1000);
-
+    setTimeout(()=>countDown(number-1),1000)
+    
 }
-countdown(30);
+countDown(30);
 */
 
-const startTime = Date.now();
 
-setTimeout(()=>{
-    const endTime = Date.now();
-
-    const actual = endTime-startTime;
-
-    console.log("expected time 2000");
-    console.log(`actul time ${actual}`);
+// Length
+/*
+function getLength(str){
+    console.log(str.length);
     
-},2000)
+}
+getLength("Rajnish Kumar");*/
 
+// indexOf
+/*
+function findIndexOf(str, target){
+    console.log(str.indexOf(target));
+    
+}
+findIndexOf("Rajnish Kumar", "Kumar")
+*/
 
+//lastIndexOf
+/*
+function findLastIndexOf(str, target){
+    console.log(str.lastIndexOf(target));
+    
+}
+findLastIndexOf("Rajnish Kumar Bhagat", "Bhagat")
+*/
+
+//slice
+/*
+function getSlice(str, start, end){
+    console.log(str.slice(start, end));
+    
+}
+getSlice("Hello World", 0,7)
+*/
+
+//replace
+/*
+const str = "Rajnish Kumar";
+console.log(str.replace("Kumar", "Bhagat"));
+*/
+
+//split
+/*
+const str="My name is Rajnish Kumar";
+const value=str.split(" ")
+console.log(value);
+*/
+
+//trim (its cut the start and end of space)
+/*
+const str = "   Rajnish kumar    "
+console.log(str.trim());
+*/
+
+//toUpperCase
+/*
+const str = "Rajnish Kumar";
+console.log(str.toUpperCase());
+*/
+
+//toLowerCase
+/*
+const str = "Rajnish Kumar";
+console.log(str.toLowerCase());
+*/
 
