@@ -171,6 +171,7 @@ function countDown(number){
 countDown(30);
 */
 
+// STRING
 
 // Length
 /*
@@ -213,10 +214,10 @@ const str = "Rajnish Kumar";
 console.log(str.replace("Kumar", "Bhagat"));
 */
 
-//split
+//split = split your string an array through given your delimiter
 /*
 const str="My name is Rajnish Kumar";
-const value=str.split(" ")
+const value=str.split(",")
 console.log(value);
 */
 
@@ -238,3 +239,71 @@ const str = "Rajnish Kumar";
 console.log(str.toLowerCase());
 */
 
+
+
+//NUMBERS
+
+
+//parseInt
+
+/*
+function newParseInt(value){
+    let result = parseInt(value);
+    console.log(result)
+}
+newParseInt("4.5");*/
+
+
+//parseFloat
+
+/*
+console.log(parseFloat("45"))
+console.log(parseFloat("45px"))
+console.log(parseFloat("4.5"))
+*/
+
+
+//ARRAY
+
+    //push = it is use for add a value end of the array
+
+    /*
+    const initialArray = [1, 2, 3];
+    initialArray.push(4)
+    console.log(initialArray)
+    */
+
+    //pop = it is use for remove last value of the array
+
+    /*
+    const initialArray = [1, 2, 3];
+    initialArray.pop()
+    console.log(initialArray)
+    */
+
+
+    //shift = it is use for remove the front value of the array
+
+    /*
+    
+    const initialArray = [1, 2, 3];
+    initialArray.shift()
+    console.log(initialArray)
+*/
+
+
+//unshift = it is use for add the front value of the array
+
+    /*                  
+    const initialArray = [1, 2, 3];
+    initialArray.unshift(0);
+    console.log(initialArray)
+    */
+
+//concat = it is use to merge the two array 
+
+    /*const firstArray = [1, 2, 3];
+    const secondArray = [4, 5, 6];
+
+    console.log(firstArray.concat( secondArray))
+*/
