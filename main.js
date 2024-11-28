@@ -245,6 +245,9 @@ console.log(str.toLowerCase());
 
 
 //parseInt
+// this is a global function thats why we simply call in javascript every where. it will parse from string to integer
+
+
 
 /*
 function newParseInt(value){
@@ -307,3 +310,40 @@ console.log(parseFloat("4.5"))
 
     console.log(firstArray.concat( secondArray))
 */
+
+
+//forEach() = if we want to iterate over an array. it accepts a function as an argunment
+// forEach says you give me a function that takes a string as an input and i am going to for every element of array call this function one by one (whatever functions you give me inside i am going call that function for each element of the array )
+
+/*const initialArray = [1, 2, 3, 4];
+    
+    function logthing(str){
+        console.log(str);
+        
+    }
+    initialArray.forEach(logthing);
+    */
+
+
+//CLASS = Class means give out a stracture of something that resuable things and using multiple places
+
+    class Animal{
+        constructor(name, legCount, speaks){
+            this.name=name;
+            this.legCount = legCount;
+            this.speaks = speaks;
+        }
+        speak(){
+            console.log("hi there " + this.speaks);
+            
+        }
+
+    }
+
+    let dog = new Animal("dog", 4, "bark"); // create object
+    let cat = new Animal("cat", 4, "meow");
+    
+    dog.speak(); // call function on object
+
+     
+
