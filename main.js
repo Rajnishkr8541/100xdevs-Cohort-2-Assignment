@@ -350,6 +350,7 @@ console.log(parseFloat("4.5"))
 
  // Date class = it is actually a predefined class
  
+ /*
  function dateMethods() {
     const currentDate = new Date();
   
@@ -385,6 +386,33 @@ console.log(parseFloat("4.5"))
   
   // Call the function to test
   dateMethods();
+
+  */
+
+/*
+  const person =  '{"name": "Rajnish", "age": 24, "gender": "male" }'
+  
+  //json.parse
+
+  const user = JSON.parse(person);
+  console.log(user["name"]);
+  */
+
+  //json.stringify = convert a object into a string. we can interchange the object to string by using JSON class
+
+  /*
+
+  const person = {
+    name:"Rajnish",
+    gender: "male"
+  }
+  const finalString = JSON.stringify(person)
+  console.log(finalString);
+  */
+
+  //Math class
+
+  
   
  
  
