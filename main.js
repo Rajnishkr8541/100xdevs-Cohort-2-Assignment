@@ -327,6 +327,7 @@ console.log(parseFloat("4.5"))
 
 //CLASS = Class means give out a stracture of something that resuable things and using multiple places
 
+/*
     class Animal{
         constructor(name, legCount, speaks){
             this.name=name;
@@ -345,5 +346,57 @@ console.log(parseFloat("4.5"))
     
     dog.speak(); // call function on object
 
-     
+     */
+
+ // Date class = it is actually a predefined class
+ 
+ function dateMethods() {
+    const currentDate = new Date();
+  
+    // Print the current date as a string
+    console.log("Current Date (as string):", currentDate.toString());
+  
+    // Getting various components of the Date
+    console.log("Date:", currentDate.getDate());
+    console.log("Month:", currentDate.getMonth() + 1); // Months are zero-indexed, so add 1
+    console.log("Year:", currentDate.getFullYear());
+    console.log("Hours:", currentDate.getHours());
+    console.log("Minutes:", currentDate.getMinutes());
+    console.log("Seconds:", currentDate.getSeconds());
+  
+    // Setting components of the date
+    currentDate.setFullYear(2024);
+    console.log("After setFullYear:", currentDate);
+  
+    // Setting month to June (index 5)
+    currentDate.setMonth(5); // Months are zero-indexed, so 5 is June
+    console.log("After setMonth (June):", currentDate);
+  
+    // Getting and setting time in milliseconds since 1970
+    console.log(
+      "Time in milliseconds since 1970:",
+      currentDate.getTime()
+    );
+  
+    // Create a new date for December 29, 2024
+    const newDate = new Date(2024, 11, 29); // Months are zero-indexed, so 11 is December
+    console.log("New Date:", newDate);
+  }
+  
+  // Call the function to test
+  dateMethods();
+  
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+
+
+
+ 
 
